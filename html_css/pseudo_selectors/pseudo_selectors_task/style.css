@@ -1,0 +1,35 @@
+.anchor:link {
+    background-color: black;
+    color: white;
+}
+
+.anchor:visited {
+    background-color: orange;
+    color: green;
+}
+
+.anchor:hover {
+    font-size: 24px;
+}
+
+.anchor:active,
+.some-button:active {
+    border: 3px solid red;
+}
+
+.some-button:disabled {
+    border: 2px dashed grey;
+}
+
+.some-button:hover:enabled {
+    background-color: gray;
+    color: white;
+}
+
+.search:focus {
+    background-color: orange;
+}
+
+.confirm-checkbox:checked {
+    margin-left: 20px;
+}
