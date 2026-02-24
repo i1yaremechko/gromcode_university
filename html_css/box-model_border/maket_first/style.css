@@ -1,0 +1,21 @@
+.rectangle {
+    border: 2px solid black;
+    margin: 50px;
+}
+
+.one {
+    background-color: blue;
+}
+
+.two {
+    background-color: yellow;
+}
+
+.three {
+    background-color: green;
+}
+
+.four {
+    padding: 50px;
+    background-color: pink;
+}
