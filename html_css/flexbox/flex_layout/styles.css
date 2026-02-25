@@ -1,0 +1,66 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    height: 40px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.navigation-item {
+    margin-right: 16px;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+}
+
+.dashboard {
+    display: flex;
+    flex-grow: 1;
+    background-color: pink;
+    justify-content: center;
+    align-items: center;
+}
+
+.news {
+    width: 200px;
+    background-color: grey;
+}
+
+.title {
+    display: flex;
+    margin: 16px 0px;
+    justify-content: center;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 0 16px;
+}
+
+.list-content {
+    height: 40px;
+}
+
+.footer {
+    height: 40px;
+    background-color: green;
+    display: flex;
+}
+
+.footer_text {
+    margin: auto;
+}
