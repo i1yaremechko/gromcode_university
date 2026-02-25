@@ -53,7 +53,9 @@
 }
 
 .list-content {
+    display: flex;
     height: 40px;
+    align-items: center;
 }
 
 .footer {
