@@ -17,13 +17,13 @@
     position: absolute;
     line-height: calc(40px);
     margin: 0;
-    display: flex;
     list-style: none;
 }
 
 .nav-item {
     margin-left: 16px;
     color: white;
+    float: left;
 }
 
 .main {
