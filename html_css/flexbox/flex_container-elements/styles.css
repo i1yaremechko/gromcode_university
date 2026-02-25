@@ -1,5 +1,5 @@
 .horizontal {
-    border: 1px solid orange;
+    border: 1px solid burlywood;
     display: flex;
     height: 50px;
     margin: 16px;
@@ -8,7 +8,7 @@
 }
 
 .vertical {
-    border: 1px solid orange;
+    border: 1px solid burlywood;
     display: flex;
     height: 200px;
     margin: 16px;
@@ -18,9 +18,11 @@
 }
 
 .horizontal span {
+    font-size: 24px;
     background-color: aqua;
 }
 
 .vertical span {
+    font-size: 24px;
     background-color: coral;
 }
