@@ -1,28 +1,26 @@
 .header {
-    background-color: darkturquoise;
     position: fixed;
-    width: 100%;
-    height: 40px;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: darkturquoise;
     z-index: 10;
 }
 
 .nav {
     position: relative;
-    top: 0;
-    left: 0;
     height: 40px;
 }
 
-.ul {
+.nav-list {
     position: absolute;
     line-height: 50%;
     display: flex;
     list-style: none;
 }
 
-.ul li {
+.nav-item {
     margin-left: 16px;
     color: white;
 }
@@ -30,34 +28,31 @@
 .main {
     background-color: beige;
     height: 5000px;
-    position: relative;
-    top: 0;
-    left: 0;
 }
 
 .bear {
-    position: relative;
-    height: 260px;
+    position: absolute;
     width: 280px;
+    height: 260px;
     top: calc(50vh - 130px);
-    left: calc(50% - 140px)
+    left: calc(50% - 140px);
 }
 
 .head {
     position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
     left: 40px;
     top: 60px;
-    background-color: aquamarine;
-    height: 200px;
-    width: 200px;
 }
 
 .ears {
     position: absolute;
-    top: 0;
-    background-color: brown;
-    height: 60px;
     width: 40px;
+    height: 60px;
+    background-color: brown;
+    top: 0;
 }
 
 .left-ear {
@@ -70,11 +65,11 @@
 
 .eyes {
     position: absolute;
-    top: 80px;
-    border-radius: 50%;
-    height: 30px;
     width: 30px;
+    height: 30px;
     background-color: grey;
+    border-radius: 50%;
+    top: 80px;
 }
 
 .left-eye {
