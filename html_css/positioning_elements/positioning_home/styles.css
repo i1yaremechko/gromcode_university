@@ -15,7 +15,8 @@
 
 .nav-list {
     position: absolute;
-    line-height: 50%;
+    line-height: calc(40px);
+    margin: 0;
     display: flex;
     list-style: none;
 }
