@@ -1,7 +1,3 @@
-body {
-    padding: 16px;
-}
-
 .checkbox {
     position: relative;
     padding-left: 35px;
@@ -26,5 +22,5 @@ input[type="checkbox"] {
 }
 
 .checkbox input:checked+.checkmark {
-    background-color: #0f0;
+    background-color: #006400;
 }
