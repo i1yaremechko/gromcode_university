@@ -1,8 +1,8 @@
 .rectangle {
-    background-color: blueviolet;
+    background-color: blueviolet !important;
 }
 
 .text::first-letter {
-    color: green;
-    font-size: 24px;
+    color: green !important;
+    font-size: 24px !important;
 }
