@@ -49,7 +49,7 @@ body {
     outline: none;
 }
 
-.form-input:valid {
+.form-input:invalid {
     border: 3px solid #f00;
 }
 
