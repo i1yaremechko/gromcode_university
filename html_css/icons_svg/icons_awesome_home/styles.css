@@ -1,0 +1,24 @@
+.icon-place {
+    display: flex;
+    justify-content: space-around;
+}
+
+div .fa-battery-full {
+    font-size: 16px;
+}
+
+div .fa-battery-three-quarters {
+    font-size: 32px;
+}
+
+div .fa-battery-half {
+    font-size: 64px;
+}
+
+div .fa-battery-quarter {
+    font-size: 128px;
+}
+
+div .fa-battery-empty {
+    font-size: 256px;
+}
