@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content .navigation {
+  background-color: #ff7f50;
+}
+.content .products_list {
+  background-color: #006400;
+}
+.content .news {
+  background-color: #0ff;
+}
+.content span {
+  text-transform: lowercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 8px;
+  background-color: #faebd7;
+  border-radius: 4px;
+  margin: auto;
+}
+.content .block {
+  height: 200px;
+  display: flex;
+}
+@media screen and (max-width: 599px) {
+  .content .block {
+    flex: 1 1 100%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .content .block {
+    flex: 1 1 50%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .content .block {
+    flex: 1;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
