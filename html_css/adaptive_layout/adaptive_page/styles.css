@@ -70,16 +70,17 @@ body {
     line-height: 2em;
     background-color: #808080;
     margin-bottom: 0.5em;
-    color: white;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
 
 .nav-list-link {
+    display: block;
+    width: 100%;
     color: white;
     text-decoration: none;
     padding: 0 0.5em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .container {
