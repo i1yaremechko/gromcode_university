@@ -8,22 +8,21 @@ html {
     font-size: 16px;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
 .header {
     color: white;
     background-image: linear-gradient(60deg, red, orange);
     text-align: center;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .main {
     display: flex;
     flex: 1;
-    flex-wrap: wrap;
 }
 
 .footer {
@@ -34,10 +33,12 @@ body {
 
 .navigation {
     padding: 0.5em;
+    width: 20%;
 }
 
 .section {
     padding: 0.5em;
+    width: 60%;
     font-size: 1.25em;
 }
 
@@ -59,6 +60,7 @@ body {
 
 .news {
     padding: 0.5em;
+    width: 20%;
 }
 
 .nav-list {
@@ -70,17 +72,15 @@ body {
     line-height: 2em;
     background-color: #808080;
     margin-bottom: 0.5em;
-}
-
-.nav-list-link {
-    display: block;
-    width: 100%;
-    color: white;
-    text-decoration: none;
-    padding: 0 0.5em;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+
+.nav-list-link {
+    color: white;
+    text-decoration: none;
+    padding: 0 0.5em;
 }
 
 .container {
@@ -92,37 +92,6 @@ picture {
 }
 
 img {
-    max-width: 100%;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
-}
-
-@media screen and (max-width: 599px) {
-    .main {
-        flex-direction: column;
-    }
-}
-
-@media screen and (min-width: 600px) {
-    .navigation {
-        flex: 1;
-        min-width: 0;
-    }
-    .section {
-        flex: 4;
-    }
-    .news {
-        flex: 1 1 100%;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .navigation {
-        flex: 1;
-    }
-    .section {
-        flex: 3;
-    }
-    .news {
-        flex: 1;
-    }
+    max-width: 100%;
 }
