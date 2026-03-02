@@ -1,18 +1,44 @@
-/* Error: Undefined variable.
- *    ,
- * 11 |     @media screen and (min-width: $md-1) {
- *    |                                   ^^^^^
- *    '
- *   styles\breakpoints.scss 11:35  for-medium-up()
- *   styles\index.scss 33:5         root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 11 \2502      @media screen and (min-width: $md-1) {\a    \2502                                    ^^^^^\a    \2575 \a   styles\\breakpoints.scss 11:35  for-medium-up()\a   styles\\index.scss 33:5         root stylesheet";
+* {
+  box-sizing: border-box;
 }
+
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (orientation: portrait) {
+  .container {
+    flex-direction: column;
+  }
+}
+@media screen and (orientation: landscape) {
+  .container {
+    flex-direction: row;
+  }
+}
+.square {
+  width: 100px;
+  height: 100px;
+  margin: 8px;
+  background-color: #ff7f50;
+}
+@media screen and (min-width: 600px) {
+  .square {
+    background-color: #8a2be2;
+  }
+}
+@media screen and (min-width: 900px) {
+  .square {
+    background-color: #a61;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .square {
+    background-color: #c47;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
