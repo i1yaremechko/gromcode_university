@@ -1,0 +1,114 @@
+.footer {
+    padding: 43px 130px 0 130px;
+    height: 389px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.footer__top {
+    display: flex;
+}
+
+.footer__info {
+    max-width: 360px;
+    margin-right: 126px;
+}
+
+.footer__description {
+    margin-top: 26px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #2B292D99;
+    opacity: 60%;
+}
+
+.downloads {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.downloads__app-store {
+    width: 135px;
+}
+
+.downloads__google-play {
+    width: 116px;
+}
+
+.additional-navigation {
+    width: 559px;
+    height: 231px;
+    display: flex;
+    margin-top: 17px;
+}
+
+.additional-navigation__links {
+    flex: 1;
+}
+
+.nav-links__title {
+    color: #2B292D;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.nav-links__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.nav-links__description {
+    font-size: 18px;
+    color: #2B292D99;
+    opacity: 60%;
+}
+
+.footer-line {
+    color: #2B292D;
+    margin-top: 50px;
+    position: absolute;
+    left: 0;
+    width: 1400px;
+    height: 1px;
+    opacity: 10%;
+}
+
+.footer-links {
+    width: 180px;
+    height: 18px;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 76px;
+}
+
+.terms {
+    display: flex;
+    width: 180px;
+    justify-content: space-between;
+}
+
+.terms__items {
+    text-decoration: none;
+    color: #2B292D99;
+    opacity: 60%;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.social-links {
+    width: 97px;
+    height: 18px;
+    display: flex;
+    justify-content: space-between;
+}
