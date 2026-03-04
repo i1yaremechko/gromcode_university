@@ -1,12 +1,16 @@
 .footer {
-    padding: 43px 130px 0 130px;
+    padding-top: 43px;
     height: 389px;
     background-color: #ffffff;
     position: relative;
 }
 
+
+/* FOOTER TOP */
+
 .footer__top {
     display: flex;
+    margin: 0 130px 0 130px;
 }
 
 .footer__info {
@@ -61,7 +65,7 @@
     margin-top: 18px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 15px;
 }
 
 .nav-links__description {
@@ -70,26 +74,25 @@
     opacity: 60%;
 }
 
+
+/* FOOTER LINE */
+
 .footer-line {
     color: #2B292D;
     margin-top: 50px;
-    position: absolute;
-    left: 0;
-    width: 1400px;
+    width: 100%;
     height: 1px;
     opacity: 10%;
 }
 
-.footer-links {
-    width: 180px;
-    height: 18px;
-}
+
+/* FOOTER BOTTOM */
 
 .footer__bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 76px;
+    margin: 16px 130px 0 130px;
 }
 
 .terms {
