@@ -1,4 +1,4 @@
-export const getSquareArray = (array) => array.map((num) => num * num);
+export const getSquaredArray = (array) => array.map((num) => num * num);
 
 export const getOddNumbers = (array) => array.filter((num) => (num % 2 !== 0));
 
