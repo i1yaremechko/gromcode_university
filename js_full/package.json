@@ -18,6 +18,8 @@
     "eslint-plugin-import": "^2.32.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
     "eslint-plugin-prettier": "^5.5.5"
   }
 }
