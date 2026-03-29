@@ -17,10 +17,18 @@ const renderTasks = (tasksList) => {
     const listItemElem = document.createElement('li');
     listItemElem.classList.add('list__item');
 
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.classList.add('list__item-checkbox');
+    checkbox.checked = task.done;
+
+    const textNode = document.createTextNode(task.text);
+
     if (task.done) {
       listItemElem.classList.add('list__item_done');
     }
-    listItemElem.append(task.text);
+
+    listItemElem.append(checkbox, textNode);
 
     return listItemElem;
   });
