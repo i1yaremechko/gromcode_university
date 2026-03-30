@@ -9,4 +9,4 @@ export const finishForm = () => {
   typeElem.before(loginElem);
 };
 
-finishForm();
+document.addEventListener('DOMContentLoaded', finishForm);
