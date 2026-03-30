@@ -4,10 +4,8 @@ export const squaredNumbers = () => {
     const number = Number(elem.dataset.number);
     const square = number * number;
 
-    elem.dataset.sqareNumber = square;
+    elem.dataset.squaredNumber = square;
     return String(square);
   });
   return squareArr;
 };
-
-console.log(squaredNumbers());
