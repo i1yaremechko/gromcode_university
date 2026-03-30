@@ -1,9 +1,10 @@
 export const finishForm = () => {
+  const typeElem = document.querySelector('input[name="password"]');
+
   const loginElem = document.createElement('input');
   loginElem.type = 'text';
   loginElem.name = 'login';
 
-  const typeElem = document.querySelector('input[name="password"]');
   typeElem.type = 'password';
   typeElem.before(loginElem);
 };
