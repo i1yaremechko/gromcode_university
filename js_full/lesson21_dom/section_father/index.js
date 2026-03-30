@@ -5,4 +5,4 @@ export const getSection = (num) => {
   return String(section.dataset.section);
 };
 
-console.log(getSection(6));
+document.addEventListener('DOMContentLoaded', getSection);
