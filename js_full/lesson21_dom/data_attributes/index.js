@@ -9,3 +9,5 @@ export const squaredNumbers = () => {
   });
   return squareArr;
 };
+
+console.log(squaredNumbers());
