@@ -2,7 +2,7 @@ import { getTasks, setTasks } from './storage.js';
 
 export const generateId = () => {
   const tasks = getTasks();
-  return Math.max(0, ...tasks.map(t => t.id)) + 1;
+  return tasks.reduce((max, task) => (task.id > max ? task.id : max), 0) + 1;
 };
 
 export const handleTaskToggle = (taskId) => {
@@ -23,5 +23,6 @@ export const createNewTask = (text) => {
     text,
     done: false,
   };
-  setTasks([...tasks, newTask]);
+  const updatedTasks = [...tasks, newTask];
+  setTasks(updatedTasks);
 };
