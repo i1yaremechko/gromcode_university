@@ -1,18 +1,23 @@
-import { onColorChange, onCreateEvent } from './calendar.js';
 import { renderCalendar } from './renderer.js';
-import { getEvents, getSettings } from './storage.js';
+import { getEvents, getSettings, setSettings } from './storage.js';
+import { onCreateEvent, onToggleEvent } from './todoList.js';
 
 const initHandlers = () => {
   const btnElem = document.querySelector('.create-task-btn');
-  const colorInput = document.querySelector('.color-picker');
+  const listElem = document.querySelector('.list');
+  const colorPicker = document.querySelector('.color-picker');
 
-  if (btnElem) btnElem.addEventListener('click', onCreateEvent);
+  btnElem.addEventListener('click', onCreateEvent);
+  listElem.addEventListener('click', onToggleEvent);
   
-  // Додай <input type="color" class="color-picker"> у свій HTML для тестів
-  if (colorInput) colorInput.addEventListener('input', onColorChange);
+  if (colorPicker) {
+    colorPicker.addEventListener('input', (e) => {
+      setSettings({ eventColor: e.target.value });
+      renderCalendar(getEvents(), getSettings());
+    });
+  }
 };
 
-// Функція синхронізації між вкладками
 const onStorageChange = (e) => {
   if (e.key === 'calendarEvents' || e.key === 'calendarSettings') {
     renderCalendar(getEvents(), getSettings());
@@ -20,7 +25,6 @@ const onStorageChange = (e) => {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Вимога №1: завантаження при старті
   renderCalendar(getEvents(), getSettings());
   initHandlers();
 });

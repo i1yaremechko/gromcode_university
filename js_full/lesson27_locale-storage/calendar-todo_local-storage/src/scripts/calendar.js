@@ -13,10 +13,8 @@ export const onCreateEvent = () => {
   renderCalendar(getEvents(), getSettings());
 };
 
-// Функція для ініціалізації вибору кольору (якщо такий input є на сторінці)
 export const onColorChange = (e) => {
   const newColor = e.target.value;
   setSettings({ eventColor: newColor });
-  // Важливо: перемальовуємо локально
   renderCalendar(getEvents(), getSettings());
 };

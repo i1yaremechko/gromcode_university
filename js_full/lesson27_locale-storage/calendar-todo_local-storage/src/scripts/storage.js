@@ -12,7 +12,6 @@ export const setEvents = (events) => {
 
 export const getSettings = () => {
   const data = localStorage.getItem(SETTINGS_KEY);
-  // за замовчуванням синій колір
   return data ? JSON.parse(data) : { eventColor: '#0000ff' };
 };
 

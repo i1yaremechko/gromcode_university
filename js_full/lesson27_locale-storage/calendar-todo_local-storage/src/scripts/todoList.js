@@ -1,23 +1,25 @@
-import { renderTasks } from './renderer.js';
-import { getTasks } from './storage.js';
-import { createNewTask, handleTaskToggle } from './tasks.js';
+import { createNewEvent, handleEventToggle } from './events.js';
+import { renderCalendar } from './renderer.js';
+import { getEvents, getSettings } from './storage.js';
 
-export const onToggleTask = (e) => {
+export const onToggleEvent = (e) => {
   const isCheckbox = e.target.classList.contains('list__item-checkbox');
   if (!isCheckbox) return;
 
-  const taskId = Number(e.target.dataset.id);
-  handleTaskToggle(taskId);
-  renderTasks(getTasks());
+  const eventId = Number(e.target.dataset.id);
+  handleEventToggle(eventId);
+  
+  renderCalendar(getEvents(), getSettings());
 };
 
-export const onCreateTask = () => {
+export const onCreateEvent = () => {
   const inputElem = document.querySelector('.task-input');
   const text = inputElem.value.trim();
 
   if (!text) return;
 
-  createNewTask(text);
+  createNewEvent(text);
   inputElem.value = '';
-  renderTasks(getTasks());
+  
+  renderCalendar(getEvents(), getSettings());
 };

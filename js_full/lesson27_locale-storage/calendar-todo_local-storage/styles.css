@@ -39,6 +39,7 @@ body {
   background-color: wheat;
   margin-bottom: 8px;
   padding: 8px;
+  color: white;
 }
 
 .list__item_done {
@@ -67,6 +68,7 @@ body {
 .actions {
   display: flex;
   margin-bottom: 8px;
+  gap: 8px;
 }
 
 .task-input {
@@ -74,4 +76,13 @@ body {
   border: 3px solid #ccc;
   border-radius: 8px;
   flex: 1;
+  padding-left: 8px;
+}
+
+.color-picker {
+  height: 32px;
+  width: 40px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
 }
