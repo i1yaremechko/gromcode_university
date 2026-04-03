@@ -1,4 +1,4 @@
-const maxFibNumber = (num) => {
+export const maxFibNumber = (num) => {
   if (num === 0) {
     return 0;
   }
