@@ -1,4 +1,4 @@
-const addImage = (imgSrc, callback) => {
+export const addImage = (imgSrc, callback) => {
   const containerElem = document.querySelector('.page');
   const imgElem = document.createElement('img');
 
