@@ -8,14 +8,13 @@ export const asyncCalculator = (numbr) =>
   .then(value => new Promise((resolve) => {
       setTimeout(() => {
         const square = value * value;
-        console.log(`Square value: ${square}`);
+        console.log(`Squared value: ${square}`);
         resolve(square);
       }, 500);
     })
   )
   .then(value => {
     const doubleSquare = value * 2;
-    console.log(`Double value: ${doubleSquare}`);
+    console.log(`Doubled value: ${doubleSquare}`);
     return doubleSquare;
   });
-  
