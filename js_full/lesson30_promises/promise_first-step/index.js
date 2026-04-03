@@ -11,7 +11,7 @@ export const addImage = (imgSrc) => {
       resolve({ width, height });
     };
 
-    imgElem.addEventListener('load', () => onImageLoaded);
+    imgElem.addEventListener('load', onImageLoaded);
     imgElem.addEventListener('error', () => reject(new Error('Image load is failed')));
   });
 
