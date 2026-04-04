@@ -19,7 +19,7 @@ const servers = [
   'https://server.com/au',
 ];
 
-export const gwtUserASAP = userId => {
+export const getUserASAP = userId => {
   const userUrls = servers
     .map(serverUrl => `${serverUrl}/${userId}`);
 
