@@ -6,7 +6,7 @@ const userNameInputElem = document.querySelector('.name-form__input');
 const getNameFormBtnElem = document.querySelector('.name-form__btn');
 
 const fetchUserData = userName =>
-  fetch(`http://api.github.com/users/${userName}`)
+  fetch(`https://api.github.com/users/${userName}`)
     .then(response => response.json());
 
 const renderUserData = userData => {
