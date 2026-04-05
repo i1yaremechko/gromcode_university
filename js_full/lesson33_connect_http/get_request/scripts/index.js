@@ -7,7 +7,12 @@ const getNameFormBtnElem = document.querySelector('.name-form__btn');
 
 const fetchUserData = userName =>
   fetch(`https://api.github.com/users/${userName}`)
-    .then(response => response.json());
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Failed to load user');
+      }
+      return response.json();
+    });
 
 const renderUserData = userData => {
   const { avatar_url, name, location } = userData;
@@ -21,7 +26,12 @@ const renderUserData = userData => {
 const onSearchUser = () => {
   const userName = userNameInputElem.value;
   fetchUserData(userName)
-    .then(userData => renderUserData(userData));
+    .then(userData => renderUserData(userData))
+    .catch(() => {
+      userNameElem.textContent = 'User not found';
+      userLocationElem.textContent = '';
+      userAvatarElem.src = '';
+    });
 };
 
 getNameFormBtnElem.addEventListener('click', onSearchUser);
