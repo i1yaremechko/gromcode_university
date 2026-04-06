@@ -2,11 +2,11 @@ const baseUrl = 'https://5e5cf5eb97d2ea0014796f01.mockapi.io/api/v1/tasks';
 
 const fetchListInfo = () => fetch(baseUrl).then(responce => responce.json());
 
-function getTasksList() {
+export function getTasksList() {
   return fetchListInfo().then(data => Array.isArray(data) ? data : [data]);
 }
 
-function getTaskById(taskId) {
+export function getTaskById(taskId) {
   return fetchListInfo().then(data => data.find(task => task.id === taskId));
 }
 
