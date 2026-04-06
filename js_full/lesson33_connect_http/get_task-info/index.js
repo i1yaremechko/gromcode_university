@@ -1,13 +1,19 @@
 const baseUrl = 'https://5e5cf5eb97d2ea0014796f01.mockapi.io/api/v1/tasks';
 
-const fetchListInfo = () => fetch(baseUrl).then(responce => responce.json());
-
 export function getTasksList() {
-  return fetchListInfo().then(data => Array.isArray(data) ? data : [data]);
+  return fetch(baseUrl)
+    .then(response => {
+      if (response.ok) return response.json();
+      throw new Error('Failed to fetch tasks');
+    });
 }
 
 export function getTaskById(taskId) {
-  return fetchListInfo().then(data => data.find(task => task.id === taskId));
+  return fetch(`${baseUrl}/${taskId}`)
+    .then(response => {
+      if (response.ok) return response.json();
+      throw new Error('Task not found');
+    });
 }
 
 // examples
