@@ -3,7 +3,7 @@
  * @return {undefined}
  */
 
-function getPrimes(num) {
+export function getPrimes(num) {
   for (let n = 2; n <= num; n += 1) {
     let isPrime = true;
 

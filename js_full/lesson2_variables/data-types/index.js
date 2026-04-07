@@ -1,5 +1,3 @@
-'use strict';
-
 const a = 17;
 const b = 17.17;
 const c = '17';

@@ -4,7 +4,7 @@
  * @return {number}
  */
 
-function getIntervalSum(from, to) {
+export function getIntervalSum(from, to) {
   let result = 0;
   for (let num = from; num <= to; num += 1) {
     if (num % 2 === 0) {

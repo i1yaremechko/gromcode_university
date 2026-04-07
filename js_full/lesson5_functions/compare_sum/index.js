@@ -3,7 +3,9 @@
  * @param {number} to
  * @return {number}
  */
-function sum(from, to) {
+export function sum(from, to) {
+  if (from > to) return 0;
+
   let result = 0;
   for (let num = from; num <= to; num += 1) {
     result += num;
@@ -18,14 +20,6 @@ function sum(from, to) {
  * @param {number} secondTo
  * @return {boolean}
  */
-function compareSums(firstFrom, firstTo, secondFrom, secondTo) {
+export function compareSums(firstFrom, firstTo, secondFrom, secondTo) {
   return sum(firstFrom, firstTo) > sum(secondFrom, secondTo);
 }
-
-// examples
-console.log(sum(5, 10));
-console.log(sum(11, 11));
-
-console.log(compareSums(5, 10, 5, 10));
-console.log(compareSums(5, 10, 5, 10));
-console.log(compareSums(-2, 5, 5, 9));

@@ -1,4 +1,4 @@
-function getEvenOdd(num) {
+export function getEvenOdd(num) {
   if (num % 2 === 0) {
     return 'even';
   }
