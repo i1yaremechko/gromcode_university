@@ -2,14 +2,12 @@
  * @param {number[]} arr
  * @return {number[]}
  */
-function getArrayBounds(arr) {
+export function getArrayBounds(arr) {
   if (!Array.isArray(arr)) {
     return null;
   }
+  if (arr.length === 0) {
+    return [];
+  }
   return [arr.length, arr[0], arr[arr.length - 1]];
 }
-
-// examples
-console.log(getArrayBounds([1, 10, 9, 11]));
-console.log(getArrayBounds(10, 12, 14)); // ==> null
-console.log(getArrayBounds([1])); // ==> [1, 1, 1]

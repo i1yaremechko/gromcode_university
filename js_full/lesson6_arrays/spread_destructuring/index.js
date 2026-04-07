@@ -2,21 +2,28 @@
  * @param {number[]} numbers
  * @return {number[]}
  */
-function swap(numbers) {
-  const [start, ...rest] = numbers;
-  return [...rest, start];
+export function swap(numbers) {
+  if (!Array.isArray(numbers)) return null;
+  if (numbers.length === 0) return [];
+
+  const [firstNum, ...rest] = numbers;
+  return [...rest, firstNum];
 }
 
 /**
  * @param {number[]} numbers
  * @return {number[]}
  */
-function swapManual(numbers) {
+export function swapManual(numbers) {
+  if (!Array.isArray(numbers)) return null;
+  if (numbers.length === 0) return [];
   const swapArr = numbers.slice(1);
   swapArr.push(numbers[0]);
   return swapArr;
 }
 
 // examples
-console.log(swap([1, 10, 9, 11]));
+console.log(swap([4, 10, 5, 3]));
+console.log(swap(4, 10, 9, 11));
 console.log(swapManual([1, 10, 9, 11]));
+console.log(swapManual([]));
