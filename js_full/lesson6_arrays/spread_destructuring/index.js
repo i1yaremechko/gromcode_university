@@ -21,9 +21,3 @@ export function swapManual(numbers) {
   swapArr.push(numbers[0]);
   return swapArr;
 }
-
-// examples
-console.log(swap([4, 10, 5, 3]));
-console.log(swap(4, 10, 9, 11));
-console.log(swapManual([1, 10, 9, 11]));
-console.log(swapManual([]));

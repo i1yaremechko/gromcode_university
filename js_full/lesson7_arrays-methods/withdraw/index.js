@@ -1,7 +1,12 @@
-function withdraw(clients, balances, client, amount) {
+export function withdraw(clients, balances, client, amount) {
+  if (
+    arguments.length !== 4 ||
+    !Array.isArray(clients) ||
+    !Array.isArray(balances) ||
+    !clients.every(el => typeof el === 'string') ||
+    !balances.every(el => Number.isFinite(el)) ||
+    !Number.isFinite(amount)
+  ) return null;
   const index = clients.indexOf(client);
-  // findIndex((person) => person === client);
   return balances[index] >= amount ? balances[index] - amount : -1;
 }
-console.log(withdraw(['Ann', 'John', 'User'], [1400, 87, -6], 'John', 50));
-console.log(withdraw(['Ann', 'John', 'User'], [1400, 87, -6], 'User', 10));
