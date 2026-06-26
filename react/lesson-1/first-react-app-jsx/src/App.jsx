@@ -1,10 +1,10 @@
 function App() {
   return (
     <div className="greeting">
-      <h1 className="greeting__title">Hello, world!</h1>
+      <h1 className="greeting__title">Hello, world</h1>
       <p className="greeting__text">I am learning React</p>
     </div>
   );
 }
 
-export default App;
+export default App
