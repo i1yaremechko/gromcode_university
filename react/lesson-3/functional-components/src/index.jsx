@@ -3,5 +3,5 @@ import './index.scss'
 import SearchField from './Search.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <SearchField name="Tom" />
+  <SearchField />
 )
