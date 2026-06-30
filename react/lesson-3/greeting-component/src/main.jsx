@@ -7,11 +7,7 @@ const rootElement = document.querySelector('#root');
 
 ReactDOM.render(
   <React.Fragment>
-    <Greeting 
-      firstName="John" 
-      lastName="Doe" 
-      birthDate={new Date(2006, 7, 1)}
-    />
+    <Greeting />
   </React.Fragment>, 
   rootElement
 );
