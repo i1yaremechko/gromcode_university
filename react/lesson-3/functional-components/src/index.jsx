@@ -1,7 +1,13 @@
-import { createRoot } from 'react-dom/client'
-import './index.scss'
-import Search from './Search.jsx'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Search from './Search.jsx';
+import './index.scss';
 
-createRoot(document.getElementById('root')).render(
-  <Search name="Tom" />
-)
+const rootElement = document.querySelector('#root');
+
+ReactDOM.render(
+  <React.Fragment>
+    <Search name="Tom" />
+  </React.Fragment>, 
+  rootElement
+);
