@@ -1,20 +1,13 @@
 import React from 'react';
 import GuestGreeting from './GuestGreeting';
 import UserGreeting from "./UserGreeting";
+React.version;
 
-const Greeting = ({ isLoggedIn }) => {
-  if (isLoggedIn) {
-    return (
-      <React.Fragment>
-        <UserGreeting />
-      </React.Fragment>
-    );
+const Greeting = (props) => {
+  if (props.isLoggedIn) {
+    return <UserGreeting />;
   }
-  return (
-    <React.Fragment>
-      <GuestGreeting />
-    </React.Fragment>
-  );
+  return <GuestGreeting />;
 };
 
 export default Greeting;

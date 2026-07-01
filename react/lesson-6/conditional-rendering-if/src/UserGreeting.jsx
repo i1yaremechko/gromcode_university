@@ -1,11 +1,8 @@
 import React from 'react';
+React.version;
 
 const UserGreeting = () => {
-  return (
-    <React.Fragment>
-      <h1>Hello, user 😎</h1>
-    </React.Fragment>
-  );
+  return <h1>Hello, user 😎</h1>;
 };
 
 export default UserGreeting;
