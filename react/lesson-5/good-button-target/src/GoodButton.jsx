@@ -8,10 +8,10 @@ class GoodButton extends React.Component {
   render() {
     return (
       <React.Fragment>
-      <button className='fancy-button' onClick={this.handleClick}>
-        Click me!
-      </button>
-    </React.Fragment>
+        <button className='fancy-button' onClick={this.handleClick}>
+          Click me!
+        </button>
+      </React.Fragment>
     );
   }
 };
