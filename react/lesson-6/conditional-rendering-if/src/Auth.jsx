@@ -1,5 +1,7 @@
 import React from 'react';
 import Greeting from './Greeting';
+import Login from './Login';
+import Logout from './Logout';
 
 class Auth extends React.Component {
   constructor(props) {
@@ -7,9 +9,6 @@ class Auth extends React.Component {
     this.state = {
       isLoggedIn: false,
     }
-
-    this.handleLogin = this.handleLogin.bind(this);
-    this.handleLogout = this.handleLogout.bind(this);
   }
 
   handleLogin = () => {
@@ -25,17 +24,15 @@ class Auth extends React.Component {
   }
   
   render() {
-    let button;
-    if (this.state.isLoggedIn) {
-      button = <button onClick={this.handleLogout}>Logout</button>;
-    } else {
-      button = <button onClick={this.handleLogin}>Login</button>;
-    }
     return (
       <React.Fragment>
         <div className='panel'>
           <Greeting isLoggedIn={this.state.isLoggedIn} />
-          <div>{button}</div>
+          {this.state.isLoggedIn ? (
+            <Logout onLogout={this.handleLogout} />
+          ) : (
+            <Login onLogin={this.handleLogin} />
+          )}
         </div>
       </React.Fragment>
     );
