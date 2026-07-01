@@ -1,5 +1,4 @@
 import React from 'react';
-import Greeting from './Greeting';
 import Login from './Login';
 import Logout from './Logout';
 
@@ -24,10 +23,14 @@ class Auth extends React.Component {
   }
   
   render() {
+    const greetingText = this.state.isLoggedIn 
+      ? 'Hello, user 😎' 
+      : 'Hi stranger. Please login 🚀';
+
     return (
       <React.Fragment>
         <div className='panel'>
-          <Greeting isLoggedIn={this.state.isLoggedIn} />
+          <h1>{greetingText}</h1>
           {this.state.isLoggedIn ? (
             <Logout onLogout={this.handleLogout} />
           ) : (
