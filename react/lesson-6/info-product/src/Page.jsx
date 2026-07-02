@@ -2,8 +2,8 @@ import React from 'react';
 import Info from './Info';
 React.version;
 
-const iPhone13 = 'iPhone 13 - Price is 500$. Available in 2 colors';
-const iPhone13Pro = 'iPhone 13 Pro - Price is 650$. Not available';
+const iPhone13 = 'Price is 500$. Available in 2 colors';
+const iPhone13Pro = 'Price is 650$. Not available';
 
 class Page extends React.Component {
   state = {
