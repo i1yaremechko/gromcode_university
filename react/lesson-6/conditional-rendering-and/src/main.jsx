@@ -7,7 +7,7 @@ const rootElement = document.getElementById('root');
 
 ReactDOM.render(
   <React.Fragment>
-    <Mailbox />
+    <Mailbox unreadMessages={[]}/>
   </React.Fragment>,
   rootElement
 );
