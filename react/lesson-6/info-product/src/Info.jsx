@@ -4,7 +4,7 @@ React.version;
 const Info = ({ info }) => {
   if (!info) return null;
   return (
-    <div className='message'>
+    <div className='info'>
       {info}
     </div>
   );
