@@ -11,18 +11,12 @@ class User extends React.Component {
 
   fetchUser = userId => {
     fetch(`https://api.github.com/users/${userId}`)
-      .then((response) => {
-        if (response.ok) {
-          return response.json();
-        }
-        throw new Error('Failed to fetch user');
-      })  
+      .then((response) => response.json())
       .then((data) => {
         this.setState({
           user: data,
-        })
-      })
-      .catch((error) => console.error(error));
+        });
+      });
   };
 
   render() {
