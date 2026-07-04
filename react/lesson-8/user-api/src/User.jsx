@@ -27,7 +27,7 @@ class User extends React.Component {
 
   render() {
     const { user } = this.state;
-    if (!this.state.user) return null;
+    if (!user) return null;
     const { avatar_url, name, location } = user;
     return (
       <div className='user'>
