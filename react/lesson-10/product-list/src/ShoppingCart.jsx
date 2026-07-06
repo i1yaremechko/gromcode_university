@@ -19,12 +19,14 @@ class ShoppingCart extends React.Component {
   };
 
   render() {
-    const count = this.state.cartItems.length;
+    const { userName } = this.props;
+    const { cartItems } = this.state;
+    const count = cartItems.length;
     return (
-    <div className="column">
-      <CartTitle userName={this.props.userData.firstName} count={count} />
-      <ProductsList cartItems={this.state.cartItems} />
-    </div>
+      <div className="column">
+        <CartTitle userName={userName} count={count} />
+        <ProductsList cartItems={cartItems} />
+      </div>
   );
   }
 }
