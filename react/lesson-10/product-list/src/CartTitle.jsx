@@ -1,7 +1,7 @@
 import React from 'react';
 React.version;
 
-const CartTitle = ({ count, userName }) => {
+const CartTitle = ({ userName, count }) => {
   return (
     <div className="cart-title">
       {userName}, you added {count} items

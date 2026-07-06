@@ -8,13 +8,9 @@ class App extends React.Component {
       firstName: 'John',
       lastName: 'Doe',
     },
-    cartItems: [
-      { id: '1', name: 'iPhone 11', price: 999 },
-      { id: '2', name: 'iPad Pro', price: 799 },
-    ],
   };
 
-  handleUserChange = event => {
+  handleChange = event => {
     const { name, value } = event.target;
     this.setState({
       userData: {
@@ -25,15 +21,14 @@ class App extends React.Component {
   };
 
   render() {
-    const { userData, cartItems } = this.state;
-    const fullName = `${userData.firstName} ${userData.lastName}`;
+    const { userData } = this.state;
 
     return (
       <div className="page">
         <h1 className="title">Hello, {userData.firstName} {userData.lastName}</h1>
         <main className="content">
-          <ShoppingCart userName={fullName} cartItems={cartItems} />
-          <Profile userData={userData} handleChange={this.handleUserChange} />
+          <ShoppingCart userData={userData} />
+          <Profile userData={userData} handleChange={this.handleChange} />
         </main>
       </div>
     );
