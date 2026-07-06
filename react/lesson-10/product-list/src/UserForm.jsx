@@ -3,20 +3,20 @@ React.version;
 
 const UserForm = ({ userData, handleChange }) => {
   return (
-    <form className='user-form'>
-      <input 
+    <form className="user-form">
+      <input
         type="text"
         name="firstName"
-        className="user-form__input"
+        className="user-form_input"
         value={userData.firstName}
-        onChange={handleChange} 
+        onChange={handleChange}
       />
-      <input 
+      <input
         type="text"
         name="lastName"
-        className="user-form__input"
+        className="user-form_input"
         value={userData.lastName}
-        onChange={handleChange} 
+        onChange={handleChange}
       />
     </form>
   );

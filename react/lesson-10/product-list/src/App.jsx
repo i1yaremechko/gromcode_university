@@ -12,7 +12,7 @@ class App extends React.Component {
       { id: '1', name: 'iPhone 11', price: 999 },
       { id: '2', name: 'iPad Pro', price: 799 },
     ],
-  }
+  };
 
   handleUserChange = event => {
     const { name, value } = event.target;
@@ -26,13 +26,13 @@ class App extends React.Component {
 
   render() {
     const { userData, cartItems } = this.state;
-    const { firstName, lastName } = userData;
+    const fullName = `${userData.firstName} ${userData.lastName}`;
 
     return (
       <div className="page">
-        <h1 className="title">Hello, {firstName} {lastName}</h1>
+        <h1 className="title">Hello, {userData.firstName} {userData.lastName}</h1>
         <main className="content">
-          <ShoppingCart userName={firstName} cartItems={cartItems} />
+          <ShoppingCart userName={fullName} cartItems={cartItems} />
           <Profile userData={userData} handleChange={this.handleUserChange} />
         </main>
       </div>

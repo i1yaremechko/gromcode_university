@@ -5,7 +5,7 @@ React.version;
 
 const ShoppingCart = ({ userName, cartItems }) => {
   return (
-    <div className='column'>
+    <div className="column">
       <CartTitle userName={userName} count={cartItems.length} />
       <ProductsList cartItems={cartItems} />
     </div>

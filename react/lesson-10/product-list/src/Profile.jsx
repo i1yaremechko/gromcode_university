@@ -4,7 +4,7 @@ React.version;
 
 const Profile = ({ userData, handleChange }) => {
   return (
-    <div className='column'>
+    <div className="column">
       <UserForm userData={userData} handleChange={handleChange} />
     </div>
   );

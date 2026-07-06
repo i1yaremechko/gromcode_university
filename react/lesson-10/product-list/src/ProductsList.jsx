@@ -6,15 +6,15 @@ const ProductsList = ({ cartItems }) => {
 
   return (
     <div className="products">
-      <ul className="products_list">
+      <ul className="products__list">
         {cartItems.map(item => (
-          <li key={item.id} className="products_list-item">
-            <span className="products_list-name">{item.name}</span>
-            <span className="products_list-price">${item.price}</span>
+          <li key={item.id} className="products__list-item">
+            <span className="products__list-name">{item.name}</span>
+            <span className="products__list-price">${item.price}</span>
           </li>
         ))}
       </ul>
-      <div className="products_total">Total: ${total}</div>
+      <div className="products__total">Total: ${total}</div>
     </div>
   );
 };

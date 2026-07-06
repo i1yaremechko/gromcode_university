@@ -3,7 +3,7 @@ React.version;
 
 const CartTitle = ({ count, userName }) => {
   return (
-    <div className='cart-title'>
+    <div className="cart-title">
       {userName}, you added {count} items
     </div>
   );
