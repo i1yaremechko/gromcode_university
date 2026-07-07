@@ -1,6 +1,6 @@
 import React from 'react';
 import EvenNumbers from './EvenNumbers';
-import Numbers from './Number';
+import Numbers from './Numbers';
 import OddNumbers from './OddNumbers';
 
 class App extends React.Component {
@@ -26,6 +26,7 @@ class App extends React.Component {
         <OddNumbers title='Odd numbers' number={this.state.number} />
         <Numbers title='All numbers' number={this.state.number} />
         <EvenNumbers title='Even numbers' number={this.state.number} />
+        <Numbers title='Just 17' number={17} />
       </div>
     );
   }
