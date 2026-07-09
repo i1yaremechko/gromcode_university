@@ -8,17 +8,17 @@ const App = () => {
   return (
     <div className='page'>
       <BrowserRouter>
-        <ul class="navigation">
-          <li class="navigation__item">
+        <ul className="navigation">
+          <li className="navigation__item">
             <Link to='/'>Home</Link>
           </li>
-          <li class="navigation__item">
+          <li className="navigation__item">
             <Link to='/products'>Products</Link>
           </li>
         </ul>
         <Switch>
           <Route exact path='/'><Home /></Route>
-          <Route path='/products'><Products /></Route>
+          <Route path='/products' component={Products} />
         </Switch>
       </BrowserRouter>
     </div>

@@ -3,7 +3,7 @@ React.version;
 
 const Product = ({ match }) => {
   return (
-    <div class="product">
+    <div className="product">
       {match.params.productId}
     </div>
   );
