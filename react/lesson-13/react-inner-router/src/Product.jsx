@@ -1,9 +1,11 @@
 import React from 'react';
 React.version;
 
-const Product = () => {
+const Product = ({ match }) => {
   return (
-    <div class="product">ball</div>
+    <div class="product">
+      {match.params.productId}
+    </div>
   );
 }
 
