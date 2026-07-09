@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
+React.version;
 
 const getTimeWithOffset = (offset) => {
   const currentTime = new Date();
@@ -27,11 +27,6 @@ const Clock = ({ location, offset }) => {
       <div className='clock__time'>{time}</div>
     </div>
   );
-};
-
-Clock.propTypes = {
-  location: PropTypes.string.isRequired,
-  offset: PropTypes.number.isRequired,
 };
 
 export default Clock;
